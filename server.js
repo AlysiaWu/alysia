@@ -14,9 +14,9 @@ app.set('view engine', 'ejs');
 
 
 // notice that the function is app.get(...) why do you think the function is called get?
-
+var port = process.env.PORT || 8000;
 // Tell the express app to listen on port 8000
-app.listen(8000, function() {
+app.listen(port, function() {
   console.log("listening on port 8000");
 })
 // this line will almost always be at the end of your server.js file (we only tell the server to listen after we have set up all of our rules)
